@@ -2,8 +2,75 @@
     Buttons
 ============= */
 
+//yellow button//
 
+@mixin yellowbutton($button-bg){
+    background-color: $button-bg;
+    padding: 8px 15px;
+    color: $black; 
+    text-decoration: none;
+    border: 2.5px solid $black;
+    border-radius: 8px;
+    @include btn-font;
+    box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.2);
 
-@mixin button($bg-color){
+    &:hover{
+        background-color: $paleyellow;
+        color: $gray5;
+        border: 2.5px solid $gray5;
+        box-shadow: none;
+        transition: .3s;
+    }
 
+    &:active{
+        background-color: $paleyellow;
+        color: $gray5;
+        border: 2.5px solid $gray5;
+        box-shadow: inset 4px 7px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+}
+
+.yellowbutton{
+    @include yellowbutton($button-bg);
+}
+
+//clear button//
+
+@mixin clearbutton($no-bg){
+    background-color: $no-bg;
+    padding: 6px 15px;
+    color: $black; 
+    text-decoration: none;
+    border: 2px solid $black;
+    border-radius: 8px;
+    @include btn-font;
+    
+
+    &:hover{
+    color: $gray3; 
+    border: 2px solid $gray3;
+    }
+   
+}
+
+.clearbutton{
+    @include clearbutton($no-bg);
+}
+
+//sns button//
+
+@mixin snsbutton($white){
+    background-color: $white;
+    border-radius: 50%;
+    border: solid $white;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    height: 64px;
+    width: 64px;
+    
+}
+
+.snsbutton{
+    @include snsbutton($white);
+    
 }
