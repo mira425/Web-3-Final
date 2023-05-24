@@ -338,6 +338,24 @@ div {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
+#header {
+  background-color: #2B2B2B;
+}
+#header h3 {
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #2B2B2B;
+}
+footer h3 {
+  color: #FFFFFF;
+}
+
 /* =============
     Typography
 ============= */
@@ -462,3 +480,23 @@ textarea {
 /* =============
     Footer
 ============= */
+#hero .herocart {
+  fill: #000000;
+}
+#hero aside {
+  display: grid;
+  grid-template-areas: "info mainimage";
+}
+#hero aside .info {
+  width: 530px;
+}
+
+#reviews ul {
+  display: grid;
+  grid-template-areas: "jimmy johnny adam" "tim samantha tony" "billy craig sadie";
+}
+
+#similar ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

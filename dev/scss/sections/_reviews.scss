@@ -1,0 +1,9 @@
+#reviews{
+    ul{
+        display: grid;
+        grid-template-areas: 
+        "jimmy johnny adam"
+        "tim samantha tony"
+        "billy craig sadie";
+    }
+}

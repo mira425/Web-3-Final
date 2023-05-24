@@ -1,9 +1,17 @@
 #hero{
 
-    article{
-        a.herocart{
-            color: black;
+    .herocart{
+        fill: $black;
+    }
 
+    aside{
+        display: grid;
+        grid-template-areas: 
+        "info mainimage";
+
+        .info{
+            width: 530px;
         }
     }
+
 }
