@@ -322,6 +322,22 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  div {
+    flex-direction: row;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -330,6 +346,41 @@ h1 {
   font-weight: 600;
   color: black;
   font-size: 40px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 24px;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 15px;
 }
 
 /* =============
