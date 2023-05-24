@@ -401,6 +401,13 @@ h6 {
   font-size: 15px;
 }
 
+h7 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -480,23 +487,152 @@ textarea {
 /* =============
     Footer
 ============= */
+#details {
+  display: flex;
+  align-items: center;
+  margin: 100px 90px;
+  gap: 66px;
+}
+#details article {
+  height: 755px;
+  width: 641px;
+}
+
+#hero {
+  margin: 84px 64px;
+}
 #hero .herocart {
   fill: #000000;
 }
 #hero aside {
   display: grid;
   grid-template-areas: "info mainimage";
+  padding-bottom: 45px;
 }
 #hero aside .info {
   width: 530px;
 }
+#hero div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#hero div article {
+  display: flex;
+}
+#hero div article img {
+  height: 108px;
+  width: 108px;
+}
+#hero div aside {
+  display: flex;
+  height: 96px;
+  width: 744px;
+}
 
+#reviews {
+  display: grid;
+  flex-direction: column;
+}
+#reviews aside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 74px;
+  margin-right: 74px;
+}
+#reviews aside article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+#reviews aside article section {
+  display: flex;
+  gap: 30px;
+}
+#reviews aside article img {
+  height: 35px;
+  width: 240px;
+}
+#reviews aside article .yellowbutton {
+  width: 100px;
+}
+#reviews aside article input {
+  width: 400px;
+  height: 51px;
+  background-color: #E9E9E9;
+  border: 3px solid #B0B0B0;
+  border-radius: 8px;
+}
 #reviews ul {
   display: grid;
   grid-template-areas: "jimmy johnny adam" "tim samantha tony" "billy craig sadie";
+  margin: 34px 74px;
+  width: 1290px;
+  height: 1330px;
+}
+#reviews ul li {
+  display: flex;
+  flex-direction: column;
+  background-color: #E9E9E9;
+  border-radius: 20px;
+  display: flex;
+  width: 383px;
+  height: 383px;
+}
+#reviews ul li div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#reviews ul li div img {
+  height: 36px;
+  width: 36px;
+}
+#reviews ul li article {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#reviews ul li .rating {
+  width: 229px;
+  height: 35px;
+}
+#reviews article h5 {
+  color: #0066FF;
+  display: flex;
+  justify-content: flex-end;
+}
+#reviews article h5 .bluearrow {
+  filter: invert(33%) sepia(47%) saturate(7453%) hue-rotate(210deg) brightness(99%) contrast(108%);
 }
 
+#similar {
+  margin: 111px 64px;
+}
+#similar h5 {
+  display: flex;
+  justify-content: flex-end;
+}
 #similar ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+}
+#similar ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 347px;
+  height: 363px;
+  background-color: #E9E9E9;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  justify-content: center;
+}
+#similar ul li h5 {
+  text-align: center;
 }

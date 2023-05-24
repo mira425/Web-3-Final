@@ -34,6 +34,32 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/fivestar.png" : {
+      "ft" : 32768,
+      "iS" : 3758,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/fivestar.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/fourstar.png" : {
+      "ft" : 32768,
+      "iS" : 4055,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/fourstar.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/CirclePic1.png" : {
       "ft" : 32768,
       "iS" : 9380,
@@ -354,11 +380,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/stars.png" : {
+    "\/deploy\/img\/reviewstar.png" : {
       "ft" : 32768,
       "iS" : 1784,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/stars.png",
+      "oAP" : "\/deploy\/img\/reviewstar.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

@@ -1,9 +1,106 @@
-#reviews{
-    ul{
+#reviews {
+
+    display: grid;
+    flex-direction: column;
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        margin-left: 74px;
+        margin-right: 74px;
+
+        article {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            section {
+                display: flex;
+                gap: 30px;
+            }
+
+            img {
+                height: 35px;
+                width: 240px;
+            }
+
+            .yellowbutton {
+                width: 100px;
+            }
+
+            input {
+                width: 400px;
+                height: 51px;
+                background-color: $gray1;
+                border: 3px solid $gray3;
+                border-radius: 8px;
+            }
+
+        }
+    }
+
+    ul {
         display: grid;
-        grid-template-areas: 
-        "jimmy johnny adam"
-        "tim samantha tony"
-        "billy craig sadie";
+        grid-template-areas:
+            "jimmy johnny adam"
+            "tim samantha tony"
+            "billy craig sadie";
+
+        margin: 34px 74px;
+        width: 1290px;
+        height: 1330px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+
+                img {
+                    height: 36px;
+                    width: 36px;
+                }
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                padding-right: 20px;
+
+            }
+
+            .rating {
+                width: 229px;
+                height: 35px;
+            }
+
+            background-color: $gray1;
+            border-radius: 20px;
+            display: flex;
+            width: 383px;
+            height: 383px;
+
+        }
+
+    }
+
+    article {
+        h5 {
+            color: $blue;
+            display: flex;
+            justify-content: flex-end;
+            .bluearrow{
+                filter: invert(33%) sepia(47%) saturate(7453%) hue-rotate(210deg) brightness(99%) contrast(108%);
+            }
+        }
     }
 }

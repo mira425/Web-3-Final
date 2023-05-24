@@ -1,17 +1,43 @@
-#hero{
+#hero {
 
-    .herocart{
+    margin: 84px 64px;
+
+    .herocart {
         fill: $black;
     }
 
-    aside{
+    aside {
         display: grid;
-        grid-template-areas: 
-        "info mainimage";
+        grid-template-areas:
+            "info mainimage";
 
-        .info{
+        .info {
             width: 530px;
         }
+
+        padding-bottom: 45px;
     }
 
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        article {
+            display: flex;
+
+            img {
+                height: 108px;
+                width: 108px;
+            }
+        }
+
+        aside {
+            display: flex;
+            height: 96px;
+            width: 744px;
+
+        }
+
+    }
 }
