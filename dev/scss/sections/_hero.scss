@@ -1,6 +1,8 @@
 #hero {
-
+    height: 723.84px;
     margin: 84px 64px;
+    display: flex;
+    flex-direction: column;
 
     .herocart {
         fill: $black;
@@ -11,11 +13,28 @@
         grid-template-areas:
             "info mainimage";
 
-        .info {
-            width: 530px;
-        }
+        article {
+            section{
+                width: 508px;
+                padding-bottom: 54px;
+            }
+            .info {
+                width: 530px;
+            }
 
-        padding-bottom: 45px;
+            padding-bottom: 45px;
+            gap: 25px;
+
+            .yellowbutton {
+                .herocart {
+                    padding-left: 10px;
+                }
+
+                display: flex;
+                align-items: center;
+                width: 124px;
+            }
+        }
     }
 
     div {
@@ -25,6 +44,8 @@
 
         article {
             display: flex;
+            height: 108px;
+            gap: 26px;
 
             img {
                 height: 108px;
@@ -32,10 +53,11 @@
             }
         }
 
-        aside {
+        section {
             display: flex;
             height: 96px;
             width: 744px;
+            gap: 11px;
 
         }
 

@@ -342,20 +342,6 @@ img {
   max-width: 100%;
 }
 
-#header {
-  background-color: #2B2B2B;
-}
-#header h3 {
-  color: #FFFFFF;
-}
-
-footer {
-  background-color: #2B2B2B;
-}
-footer h3 {
-  color: #FFFFFF;
-}
-
 /* =============
     Typography
 ============= */
@@ -487,6 +473,49 @@ textarea {
 /* =============
     Footer
 ============= */
+#contact {
+  margin: 80px 130px 0px;
+}
+#contact section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+#contact section input {
+  width: 400px;
+  height: 51px;
+  background-color: #E9E9E9;
+  border: 3px solid #B0B0B0;
+  border-radius: 8px;
+}
+#contact section a.yellowbutton {
+  width: 100px;
+  height: 51px;
+}
+#contact div {
+  display: flex;
+  justify-content: space-between;
+}
+#contact div .about {
+  display: flex;
+  flex-direction: column;
+}
+#contact div .location {
+  display: flex;
+  flex-direction: row;
+  gap: 116px;
+}
+#contact div .location article {
+  display: flex;
+  flex-direction: column;
+}
+#contact div .location section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 #details {
   display: flex;
   align-items: center;
@@ -497,9 +526,61 @@ textarea {
   height: 755px;
   width: 641px;
 }
+#details article aside {
+  padding-bottom: 22px;
+}
+#details article section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#details article section div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #B0B0B0;
+  border-radius: 8px;
+  line-height: 24.38px;
+  padding: 10px 32px 10px;
+  padding-bottom: 30px;
+}
+#details article section aside {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #B0B0B0;
+  border-radius: 8px;
+  line-height: 24.38px;
+  padding: 10px 32px;
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: #2B2B2B;
+}
+footer h3 {
+  color: #FFFFFF;
+}
+
+#header {
+  width: 1440px;
+  height: 190px;
+  background-color: #2B2B2B;
+}
+#header h3 {
+  color: #FFFFFF;
+}
+#header section {
+  display: flex;
+}
+#header div {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #hero {
+  height: 723.84px;
   margin: 84px 64px;
+  display: flex;
+  flex-direction: column;
 }
 #hero .herocart {
   fill: #000000;
@@ -507,10 +588,25 @@ textarea {
 #hero aside {
   display: grid;
   grid-template-areas: "info mainimage";
-  padding-bottom: 45px;
 }
-#hero aside .info {
+#hero aside article {
+  padding-bottom: 45px;
+  gap: 25px;
+}
+#hero aside article section {
+  width: 508px;
+  padding-bottom: 54px;
+}
+#hero aside article .info {
   width: 530px;
+}
+#hero aside article .yellowbutton {
+  display: flex;
+  align-items: center;
+  width: 124px;
+}
+#hero aside article .yellowbutton .herocart {
+  padding-left: 10px;
 }
 #hero div {
   display: flex;
@@ -519,15 +615,18 @@ textarea {
 }
 #hero div article {
   display: flex;
+  height: 108px;
+  gap: 26px;
 }
 #hero div article img {
   height: 108px;
   width: 108px;
 }
-#hero div aside {
+#hero div section {
   display: flex;
   height: 96px;
   width: 744px;
+  gap: 11px;
 }
 
 #reviews {
@@ -613,6 +712,9 @@ textarea {
 
 #similar {
   margin: 111px 64px;
+}
+#similar h1 {
+  color: #EEB43C;
 }
 #similar h5 {
   display: flex;

@@ -194,6 +194,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/icons\/buttoncart.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/buttoncart.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/icons\/Card.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -219,6 +229,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/icons\/PayPal.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/socials.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/socials.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

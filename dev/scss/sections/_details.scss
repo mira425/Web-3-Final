@@ -1,11 +1,41 @@
-#details{
+#details {
     display: flex;
     align-items: center;
     margin: 100px 90px;
     gap: 66px;
 
-    article{
+    article {
         height: 755px;
         width: 641px;
+
+        aside{
+            padding-bottom: 22px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $gray3;
+                border-radius: 8px;
+                line-height: 24.38px;
+                padding: 10px 32px 10px;
+                padding-bottom: 30px;
+            }
+
+            aside {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $gray3;
+                border-radius: 8px;
+                line-height: 24.38px;
+                padding: 10px 32px;
+                padding-bottom: 30px;
+            }
+        }
     }
 }
