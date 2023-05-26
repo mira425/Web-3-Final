@@ -1,17 +1,27 @@
 #hero {
     height: 723.84px;
-    margin: 84px 64px;
+    margin: 84px 250px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    span{
+        background-color: $gray6;
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        bottom: -110px;
+    }
 
     .herocart {
         fill: $black;
     }
 
     aside {
-        display: grid;
-        grid-template-areas:
-            "info mainimage";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
 
         article {
             section{
@@ -41,7 +51,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        width: 100%;
+        gap: 25px;
+ 
         article {
             display: flex;
             height: 108px;
@@ -56,7 +68,6 @@
         section {
             display: flex;
             height: 96px;
-            width: 744px;
             gap: 11px;
 
         }

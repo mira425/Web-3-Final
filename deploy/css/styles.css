@@ -519,6 +519,7 @@ textarea {
 #details {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 100px 90px;
   gap: 66px;
 }
@@ -561,33 +562,91 @@ footer h3 {
 }
 
 #header {
-  width: 1440px;
+  width: 100%;
   height: 190px;
   background-color: #2B2B2B;
 }
 #header h3 {
   color: #FFFFFF;
 }
-#header section {
+#header .logo {
   display: flex;
 }
-#header div {
+#header #burger-button {
+  display: block;
+}
+@media (min-width: 1024px) {
+  #header #burger-button {
+    display: none;
+  }
+}
+#header #main-menu {
+  display: none;
+}
+#header #main-menu ul {
   display: flex;
+}
+@media (min-width: 1024px) {
+  #header #main-menu {
+    display: inline;
+  }
+}
+#header span,
+#header span::before,
+#header span::after {
+  display: block;
+  height: 5px;
+  width: 30px;
+  background-color: #FFFFFF;
+}
+#header span {
+  z-index: 3px;
+  display: block;
+  position: relative;
+}
+#header span::before {
+  position: absolute;
+  content: " ";
+  top: -10px;
+}
+#header span::after {
+  position: absolute;
+  content: " ";
+  top: 10px;
+}
+
+#menu ul {
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
+}
+#menu ul a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 #hero {
   height: 723.84px;
-  margin: 84px 64px;
+  margin: 84px 250px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+#hero span {
+  background-color: #2B2B2B;
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  bottom: -110px;
 }
 #hero .herocart {
   fill: #000000;
 }
 #hero aside {
-  display: grid;
-  grid-template-areas: "info mainimage";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
 #hero aside article {
   padding-bottom: 45px;
@@ -612,6 +671,8 @@ footer h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  gap: 25px;
 }
 #hero div article {
   display: flex;
@@ -625,7 +686,6 @@ footer h3 {
 #hero div section {
   display: flex;
   height: 96px;
-  width: 744px;
   gap: 11px;
 }
 
@@ -638,6 +698,10 @@ footer h3 {
   flex-direction: column;
   margin-left: 74px;
   margin-right: 74px;
+  padding-bottom: 45px;
+}
+#reviews aside * {
+  margin: 0px;
 }
 #reviews aside article {
   display: flex;
@@ -666,6 +730,7 @@ footer h3 {
 #reviews ul {
   display: grid;
   grid-template-areas: "jimmy johnny adam" "tim samantha tony" "billy craig sadie";
+  justify-items: center;
   margin: 34px 74px;
   width: 1290px;
   height: 1330px;
@@ -713,6 +778,19 @@ footer h3 {
 #similar {
   margin: 111px 64px;
 }
+#similar article, #similar ul {
+  position: relative;
+  z-index: 2000;
+}
+#similar span {
+  z-index: 0px;
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  left: 0px;
+  top: 1937px;
+  background-color: #2B2B2B;
+}
 #similar h1 {
   color: #EEB43C;
 }
@@ -722,9 +800,11 @@ footer h3 {
 }
 #similar ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 132px;
 }
 #similar ul li {
+  gap: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -734,6 +814,9 @@ footer h3 {
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   justify-content: center;
+}
+#similar ul li * {
+  margin: 0px;
 }
 #similar ul li h5 {
   text-align: center;
