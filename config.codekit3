@@ -492,6 +492,86 @@
       "oAP" : "\/dev\/checkout.html",
       "oF" : 0
     },
+    "\/dev\/content\/product\/_contact.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product\/_contact.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/_details.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product\/_details.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/_hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product\/_hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/_reviews.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product\/_reviews.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/_similar.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product\/_similar.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/checkout\/bag.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/product\/checkout\/bag.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/checkout\/confirm.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/product\/checkout\/confirm.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/checkout\/payment.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/product\/checkout\/payment.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/checkout\/shipping.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/product\/checkout\/shipping.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product\/thankyou\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/product\/thankyou\/thankyou.html",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
