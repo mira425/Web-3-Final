@@ -7,17 +7,32 @@
         justify-content: space-between;
         padding-bottom: 60px;
 
+        .socials{
+            width: 265px;
+            height: 76px;
+        }
+
         input {
-            width: 400px;
-            height: 51px;
-            background-color: $gray1;
-            border: 3px solid $gray3;
-            border-radius: 8px;
+            display: none;
+
+            @include lg {
+                display: inline;
+                width: 400px;
+                height: 51px;
+                background-color: $gray1;
+                border: 3px solid $gray3;
+                border-radius: 8px;
+            }
         }
 
         a.yellowbutton {
-            width: 100px;
-            height: 51px;
+            display: none;
+
+            @include lg {
+                display: inline;
+                width: 100px;
+                height: 51px;
+            }
         }
     }
 
@@ -26,21 +41,32 @@
         justify-content: space-between;
 
         .about {
-            display: flex;
-            flex-direction: column;
+            display: none;
+
+            @include lg {
+                display: flex;
+                flex-direction: column;
+                display: inline;
+            }
         }
 
         .location {
-            display: flex;
-            flex-direction: row;
-            gap: 116px;
+            display: none;
 
-            article{
+            @include lg {
+                display: inline;
+                display: flex;
+                flex-direction: row;
+                gap: 116px;
+            }
+
+            article {
                 display: flex;
                 flex-direction: column;
 
             }
-            section{
+
+            section {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;

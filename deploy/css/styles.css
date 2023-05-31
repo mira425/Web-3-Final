@@ -482,29 +482,57 @@ textarea {
   justify-content: space-between;
   padding-bottom: 60px;
 }
+#contact section .socials {
+  width: 265px;
+  height: 76px;
+}
 #contact section input {
-  width: 400px;
-  height: 51px;
-  background-color: #E9E9E9;
-  border: 3px solid #B0B0B0;
-  border-radius: 8px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #contact section input {
+    display: inline;
+    width: 400px;
+    height: 51px;
+    background-color: #E9E9E9;
+    border: 3px solid #B0B0B0;
+    border-radius: 8px;
+  }
 }
 #contact section a.yellowbutton {
-  width: 100px;
-  height: 51px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #contact section a.yellowbutton {
+    display: inline;
+    width: 100px;
+    height: 51px;
+  }
 }
 #contact div {
   display: flex;
   justify-content: space-between;
 }
 #contact div .about {
-  display: flex;
-  flex-direction: column;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #contact div .about {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+  }
 }
 #contact div .location {
-  display: flex;
-  flex-direction: row;
-  gap: 116px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #contact div .location {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    gap: 116px;
+  }
 }
 #contact div .location article {
   display: flex;
@@ -516,16 +544,42 @@ textarea {
   align-items: flex-start;
 }
 
-#details {
+@media (min-width: 576px) {
+  #details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  #details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 90px;
+    gap: 66px;
+  }
+}
+#details aside img {
+  width: 256px;
+  height: 340px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px 90px;
-  gap: 66px;
+}
+@media (min-width: 1024px) {
+  #details aside img {
+    height: auto;
+    width: auto;
+  }
 }
 #details article {
-  height: 755px;
-  width: 641px;
+  width: 358px;
+}
+@media (min-width: 1024px) {
+  #details article {
+    height: 755px;
+    width: 641px;
+  }
 }
 #details article aside {
   padding-bottom: 22px;
@@ -555,22 +609,44 @@ textarea {
 }
 
 footer {
+  width: 100%;
   background-color: #2B2B2B;
 }
 footer h3 {
   color: #FFFFFF;
 }
+footer h3, footer img {
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer h3, footer img {
+    display: inline;
+  }
+}
 
 #header {
-  width: 100%;
-  height: 190px;
   background-color: #2B2B2B;
+  width: 100%;
+  height: 43px;
+}
+@media (min-width: 1024px) {
+  #header {
+    width: 100%;
+    height: 190px;
+  }
 }
 #header h3 {
   color: #FFFFFF;
 }
-#header .logo {
-  display: flex;
+#header #logo {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #header #logo {
+    display: inline;
+    display: flex;
+    justify-content: center;
+  }
 }
 #header #burger-button {
   display: block;
@@ -616,63 +692,134 @@ footer h3 {
 }
 
 #menu ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: none;
 }
-#menu ul a {
-  color: #FFFFFF;
-  text-decoration: none;
+@media (min-width: 1024px) {
+  #menu ul {
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #menu ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
 }
 
-#hero {
-  height: 723.84px;
-  margin: 84px 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 1024px) {
+  #hero {
+    margin: 84px 250px;
+    display: inline;
+    height: 723.84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #hero span {
-  background-color: #2B2B2B;
-  position: absolute;
-  width: 100%;
-  height: 64px;
-  bottom: -110px;
+  display: none;
 }
-#hero .herocart {
-  fill: #000000;
+@media (min-width: 1024px) {
+  #hero span {
+    display: inline;
+    background-color: #2B2B2B;
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    bottom: -110px;
+  }
 }
 #hero aside {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
+  flex-direction: column;
 }
-#hero aside article {
-  padding-bottom: 45px;
-  gap: 25px;
+@media (min-width: 1024px) {
+  #hero aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 }
-#hero aside article section {
-  width: 508px;
-  padding-bottom: 54px;
+#hero aside .info {
+  display: flex;
+  flex-direction: column;
 }
-#hero aside article .info {
-  width: 530px;
+@media (min-width: 1024px) {
+  #hero aside .info {
+    flex-direction: column;
+  }
 }
-#hero aside article .yellowbutton {
+#hero aside .info section {
+  width: 352px;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  #hero aside .info section {
+    width: 508px;
+    padding-bottom: 54px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero aside .info {
+    width: 530px;
+    padding-bottom: 45px;
+    gap: 25px;
+  }
+}
+#hero aside .info h1, #hero aside .info h2, #hero aside .info h4 {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #hero aside .info h1, #hero aside .info h2, #hero aside .info h4 {
+    text-align: left;
+  }
+}
+#hero aside .info .yellowbutton {
   display: flex;
   align-items: center;
   width: 124px;
 }
-#hero aside article .yellowbutton .herocart {
+#hero aside .info .yellowbutton .herocart {
   padding-left: 10px;
 }
-#hero div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+#hero aside .mainimage img {
+  display: none;
   width: 100%;
-  gap: 25px;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  #hero aside .mainimage img {
+    display: inline;
+  }
+}
+#hero aside .mainmobile {
+  margin: 0px;
+}
+#hero aside .mainmobile img {
+  margin: 0px;
+  display: inline;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #hero aside .mainmobile img {
+    display: none;
+  }
+}
+#hero div {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #hero div {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+  }
 }
 #hero div article {
   display: flex;
@@ -696,12 +843,16 @@ footer h3 {
 #reviews aside {
   display: flex;
   flex-direction: column;
-  margin-left: 74px;
-  margin-right: 74px;
   padding-bottom: 45px;
 }
 #reviews aside * {
   margin: 0px;
+}
+@media (min-width: 1024px) {
+  #reviews aside {
+    margin-left: 74px;
+    margin-right: 74px;
+  }
 }
 #reviews aside article {
   display: flex;
@@ -718,22 +869,45 @@ footer h3 {
   width: 240px;
 }
 #reviews aside article .yellowbutton {
-  width: 100px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #reviews aside article .yellowbutton {
+    display: inline;
+    width: 100px;
+  }
 }
 #reviews aside article input {
-  width: 400px;
-  height: 51px;
-  background-color: #E9E9E9;
-  border: 3px solid #B0B0B0;
-  border-radius: 8px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #reviews aside article input {
+    display: inline;
+    width: 400px;
+    height: 51px;
+    background-color: #E9E9E9;
+    border: 3px solid #B0B0B0;
+    border-radius: 8px;
+  }
 }
 #reviews ul {
-  display: grid;
-  grid-template-areas: "jimmy johnny adam" "tim samantha tony" "billy craig sadie";
-  justify-items: center;
-  margin: 34px 74px;
-  width: 1290px;
-  height: 1330px;
+  overflow: scroll;
+  width: 100vw;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 0px;
+}
+@media (min-width: 1024px) {
+  #reviews ul {
+    display: grid;
+    grid-template-areas: "jimmy johnny adam" "tim samantha tony" "billy craig sadie";
+    justify-items: center;
+    margin: 34px 74px;
+    width: 1290px;
+    height: 1330px;
+  }
 }
 #reviews ul li {
   display: flex;
@@ -771,25 +945,29 @@ footer h3 {
   display: flex;
   justify-content: flex-end;
 }
-#reviews article h5 .bluearrow {
-  filter: invert(33%) sepia(47%) saturate(7453%) hue-rotate(210deg) brightness(99%) contrast(108%);
-}
 
 #similar {
   margin: 111px 64px;
 }
-#similar article, #similar ul {
+#similar article,
+#similar ul {
   position: relative;
   z-index: 2000;
 }
 #similar span {
-  z-index: 0px;
-  position: absolute;
-  width: 100%;
-  height: 430px;
-  left: 0px;
-  top: 1937px;
-  background-color: #2B2B2B;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #similar span {
+    display: inline;
+    z-index: 0px;
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0px;
+    top: 1937px;
+    background-color: #2B2B2B;
+  }
 }
 #similar h1 {
   color: #EEB43C;
@@ -798,10 +976,12 @@ footer h3 {
   display: flex;
   justify-content: flex-end;
 }
-#similar ul {
-  display: flex;
-  justify-content: center;
-  gap: 132px;
+@media (min-width: 1024px) {
+  #similar ul {
+    display: flex;
+    justify-content: center;
+    gap: 132px;
+  }
 }
 #similar ul li {
   gap: 24px;

@@ -1,15 +1,43 @@
 #details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px 90px;
-    gap: 66px;
+    @include sm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include lg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 90px;
+        gap: 66px;
+    }
+
+    aside{
+        
+        img{
+            width: 256px;
+            height: 340px; 
+            display: flex;
+
+            @include lg{
+                height: auto;
+                width: auto;
+            }
+
+        }
+    }
 
     article {
-        height: 755px;
-        width: 641px;
+        width: 358px;
 
-        aside{
+        @include lg {
+            height: 755px;
+            width: 641px;
+        }
+
+        aside {
             padding-bottom: 22px;
         }
 

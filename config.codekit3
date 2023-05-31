@@ -283,6 +283,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/mobilemain.png" : {
+      "ft" : 32768,
+      "iS" : 86517,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/mobilemain.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/pfp\/adam.png" : {
       "ft" : 32768,
       "iS" : 3541,
@@ -471,44 +484,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/product\/_contact.kit" : {
+    "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/product\/_contact.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/product\/_details.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/product\/_details.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/product\/_hero.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/product\/_hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/product\/_reviews.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/product\/_reviews.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/product\/_similar.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/product\/_similar.html",
+      "oA" : 0,
+      "oAP" : "\/dev\/checkout.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -541,6 +522,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
+      "oF" : 0
+    },
+    "\/dev\/index copy.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/index copy.html",
       "oF" : 0
     },
     "\/dev\/index.kit" : {

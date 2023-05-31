@@ -1,39 +1,74 @@
 #hero {
-    height: 723.84px;
-    margin: 84px 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    span{
-        background-color: $gray6;
-        position: absolute;
-        width: 100%;
-        height: 64px;
-        bottom: -110px;
+    @include lg {
+        margin: 84px 250px;
+        display: inline;
+        height: 723.84px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .herocart {
-        fill: $black;
+
+    span {
+        display: none;
+
+        @include lg {
+            display: inline;
+            background-color: $gray6;
+            position: absolute;
+            width: 100%;
+            height: 64px;
+            bottom: -110px;
+        }
     }
 
     aside {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
+        flex-direction: column;
 
-        article {
-            section{
-                width: 508px;
-                padding-bottom: 54px;
+        @include lg {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+
+            @include lg{
+                flex-direction: column;
             }
-            .info {
+
+            section {
+                width: 352px;
+                height: auto;
+
+                @include lg {
+                    width: 508px;
+                    padding-bottom: 54px;
+                }
+            }
+
+            @include lg{
                 width: 530px;
+                padding-bottom: 45px;
+                gap: 25px;
+            }
+           
+
+
+            h1,h2,h4{
+                text-align: center;
             }
 
-            padding-bottom: 45px;
-            gap: 25px;
+            @include lg{
+                h1,h2,h4{
+                    text-align: left;
+                }
+            }
 
             .yellowbutton {
                 .herocart {
@@ -45,15 +80,47 @@
                 width: 124px;
             }
         }
+
+        .mainimage {
+            img {
+                display: none;
+                width: 100%;
+                height: 100%;
+
+                @include lg {
+                    display: inline;
+                }
+            }
+        }
+
+        .mainmobile {
+            margin: 0px;
+            img {
+                margin: 0px;
+                display: inline;
+                display: flex;
+                justify-content: center;
+
+                @include lg {
+                    display: none;
+                }
+            }
+        }
     }
 
     div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        gap: 25px;
- 
+
+        display: none;
+
+        @include lg {
+            display: inline;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            gap: 25px;
+        }
+
         article {
             display: flex;
             height: 108px;
@@ -73,4 +140,5 @@
         }
 
     }
+
 }

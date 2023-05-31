@@ -1,7 +1,14 @@
 footer{
-
+    width: 100%;
     background-color: $gray6;
     h3{
         color: $white;
+    }
+    h3, img{
+        display: none;
+
+        @include lg{
+            display: inline;
+        }
     }
 }
