@@ -544,6 +544,11 @@ textarea {
   align-items: flex-start;
 }
 
+#details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (min-width: 576px) {
   #details {
     display: flex;
@@ -648,44 +653,44 @@ footer h3, footer img {
     justify-content: center;
   }
 }
-#header #burger-button {
+#header #burger-btn {
   display: flex;
   flex-direction: column;
   gap: 5px;
   position: relative;
 }
-#header #burger-button div {
+#header #burger-btn div {
   height: 3px;
   width: 26px;
   background: #EEB43C;
 }
 
 @media only screen and (max-width: 600px) {
-  #menu {
-    background-color: green;
+  #main-menu {
+    background-color: #2B2B2B;
     transition: 0.3s;
-    height: 100vw;
+    height: 100%;
     width: 80%;
     position: absolute;
     top: 0;
     right: -100%;
   }
-  #menu.show-menu {
+  #main-menu.show-menu {
     right: 0;
     transition: 0.3s;
   }
 }
-#menu ul {
+#main-menu ul {
   display: none;
 }
 @media (min-width: 1024px) {
-  #menu ul {
+  #main-menu ul {
     display: inline;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-  #menu ul a {
+  #main-menu ul a {
     color: #FFFFFF;
     text-decoration: none;
   }
@@ -729,10 +734,13 @@ footer h3, footer img {
 #hero aside .info {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-bottom: 44px;
 }
 @media (min-width: 1024px) {
   #hero aside .info {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 #hero aside .info section {
@@ -778,14 +786,9 @@ footer h3, footer img {
     display: inline;
   }
 }
-#hero aside .mainmobile {
-  margin: 0px;
-}
 #hero aside .mainmobile img {
-  margin: 0px;
   display: inline;
   display: flex;
-  justify-content: center;
 }
 @media (min-width: 1024px) {
   #hero aside .mainmobile img {
@@ -874,7 +877,10 @@ footer h3, footer img {
     border-radius: 8px;
   }
 }
-#reviews ul {
+#reviews .reviews {
+  display: flex;
+}
+#reviews .reviews ul {
   overflow: scroll;
   width: 100vw;
   justify-content: flex-start;
@@ -884,47 +890,56 @@ footer h3, footer img {
   margin: 0px;
 }
 @media (min-width: 1024px) {
-  #reviews ul {
+  #reviews .reviews ul {
+    overflow: visible;
+  }
+}
+@media (min-width: 1024px) {
+  #reviews .reviews ul {
     display: grid;
     grid-template-areas: "jimmy johnny adam" "tim samantha tony" "billy craig sadie";
     justify-items: center;
     margin: 34px 74px;
     width: 1290px;
     height: 1330px;
+    gap: 72px;
   }
 }
-#reviews ul li {
+#reviews .reviews ul li {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
+  align-items: flex-start;
   background-color: #E9E9E9;
   border-radius: 20px;
   display: flex;
   width: 383px;
   height: 383px;
 }
-#reviews ul li div {
+#reviews .reviews ul li div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  flex-direction: row;
 }
-#reviews ul li div img {
+#reviews .reviews ul li div img {
   height: 36px;
   width: 36px;
 }
-#reviews ul li article {
+#reviews .reviews ul li article {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
 }
-#reviews ul li .rating {
+#reviews .reviews ul li .rating {
   width: 229px;
   height: 35px;
 }
-#reviews article h5 {
+#reviews .more h5 {
   color: #0066FF;
   display: flex;
   justify-content: flex-end;
@@ -953,27 +968,45 @@ footer h3, footer img {
     background-color: #2B2B2B;
   }
 }
+@media (min-width: 1024px) {
+  #similar .seemore {
+    color: #EEB43C;
+  }
+}
 #similar h1 {
-  color: #EEB43C;
+  color: #000000;
+}
+@media (min-width: 1024px) {
+  #similar h1 {
+    color: #EEB43C;
+  }
 }
 #similar h5 {
   display: flex;
   justify-content: flex-end;
 }
+#similar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 @media (min-width: 1024px) {
   #similar ul {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     gap: 132px;
   }
 }
 #similar ul li {
-  gap: 24px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 347px;
-  height: 363px;
+  justify-content: center;
+  width: 285px;
+  height: 285px;
   background-color: #E9E9E9;
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -981,6 +1014,20 @@ footer h3, footer img {
 }
 #similar ul li * {
   margin: 0px;
+}
+@media (min-width: 1024px) {
+  #similar ul li {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 347px;
+    height: 363px;
+    background-color: #E9E9E9;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    justify-content: center;
+  }
 }
 #similar ul li h5 {
   text-align: center;

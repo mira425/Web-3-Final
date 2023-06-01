@@ -23,7 +23,7 @@
         }
     }
 
-    #burger-button {
+    #burger-btn {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -38,12 +38,12 @@
 
 }
 
-#menu {
+#main-menu {
 
     @media only screen and (max-width: 600px) {
-        background-color: green;
+        background-color: $gray6;
         transition: .3s;
-        height: 100vw;
+        height: 100%;
         width: 80%;
         position: absolute;
         top: 0;
