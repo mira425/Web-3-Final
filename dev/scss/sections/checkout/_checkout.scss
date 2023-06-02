@@ -1,0 +1,57 @@
+#bag {
+
+    h1,h2,h3,h4,h5,h6{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+//////////
+
+#forms {
+    article {
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            img {
+                height: 49px;
+                width: 49px;
+            }
+        }
+
+        input{
+            width: 18px;
+            height: 18px;
+            filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.1));
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            width: 328px;
+            height: 38px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            color: black;
+            font-size: 15px;
+            border: 1.5px solid $gray3;
+        }
+    }
+}

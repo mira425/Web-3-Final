@@ -84,6 +84,16 @@ h7 {
     font-size: 20px;
 }
 
+@mixin h8 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h8 {
+    @include h8();
+    color: black;
+    font-size: 15px;
+}
 
 //button//
 

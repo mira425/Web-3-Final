@@ -42,23 +42,93 @@
             </ul>
         </nav>
     </header>
-    <h2>Your Bag</h2>
-        <h5>Total: 1 item - $186</h5>
+    <section id="bag">
+            <h2>Your Bag</h2>
+            <h6>Total: 1 item - $186</h6>
         
-        <h4>Dovetail Saw with 
-            Cherry Handle</h4>
-    
-    
-    
+            <article>
+                <img class="saw" src="img/checkout/checkoutsaw.png" alt="sawimage">
+                <div>
+                    <aside>
+                        <h4>Dovetail Saw with
+                            Cherry Handle <img src="img/icons/trash.png" alt="trashcan"> </h4>
+                    </aside>
+                    <h6>SKU: 1-SAW-DS-Cherry</h6>
+                    <h6>$175.00</h6>
+                </div>
+            </article>
+        
+            <section>
+                <h2>Order Summary</h2>
+            </section>
+        
+            <ul>
+                <li class="type">
+                    <h6>Original Price</h6>
+                    <h6>Shipping</h6>
+                    <h8>Total</h8>
+                </li>
+                <li class="price">
+                    <h6>$175.00</h6>
+                    <h6>$11.00</h6>
+                    <h8>$186.00</h8>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="forms">
+        
+            <article>
+                <h4>Payment Method</h4>
+                <div class=>
+                    <input type="radio"><img src="img/icons/Card.svg" alt="card" >
+                    <input type="radio"><img src="img/icons/PayPal.svg" alt="paypal">
+                    <input type="radio"><img src="img/icons/ApplePay.svg" alt="applepay">
+                </div>
+            </article>
+        
+            <h4>Payment Information</h4>
+        
+            <div class="payinfo">
+                <form>
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="cardnumber" placeholder="Card Number">
+                    <input type="text" id="expdate" placeholder="Expiration Date">
+                    <input type="text" id="css" placeholder="CSS">
+                </form>
+            </div>
+        
+            <h4>Shipping Information</h4>
+        
+            <div class="shipinfo">
+                <form>
+                    <input type="text" id="street" placeholder="Street">
+                    <input type="text" id="city" placeholder="City">
+                    <input type="text" id="zip" placeholder="Zip Code">
+                    <input type="text" id="country" placeholder="Country">
+                </form>
+            </div>
+        
+            <aside>
+                <h4>Billing Information</h4>
+                <h6>
+                    <input type="checkbox" id="sameinfo" class="checkbox" />
+                    Billing Info same as Shipping
+                </h6>
+            </aside>
+        
+            <a href="#" class="yellowbutton"> Confirm Order </a>
+        
+        </section>
     <footer id="footer"> 
-                            <img src="img/logo.png" alt="logo">
-                        
-                            <div>
-                                <h3>Privacy Policy</h3>
-                                <h3>Terms of Use</h3>
-                                <h3>Contact Us</h3>
-                            </div>
-                        </footer>
+                <img src="img/logo.png" alt="logo">
+            
+                <div>
+                    <h3>Privacy Policy</h3>
+                    <h3>Terms of Use</h3>
+                    <h3>Contact Us</h3>
+                </div>
+            </footer>
 
     <script src="js/scripts-min.js"></script>
     

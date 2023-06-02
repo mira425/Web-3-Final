@@ -19,7 +19,7 @@
             position: absolute;
             width: 100%;
             height: 64px;
-            bottom: -110px;
+            bottom: -150px;
         }
     }
 
@@ -46,22 +46,25 @@
             }
 
             section {
-                width: 352px;
-                height: auto;
+                // width: 352px;
+                // height: auto;
 
                 @include lg {
-                    width: 508px;
+                    // width: 508px;
                     padding-bottom: 54px;
                 }
             }
 
             @include lg{
-                width: 530px;
+                // width: 530px;
                 padding-bottom: 45px;
                 gap: 25px;
             }
            
-
+            h4{
+                width: 508px;
+                // height: 118px;
+            }
 
             h1,h2,h4{
                 text-align: center;
@@ -84,14 +87,14 @@
             }
         }
 
-        .mainimage {
+        article.mainimage {
             img {
                 display: none;
-                width: 100%;
-                height: 100%;
 
                 @include lg {
                     display: inline;
+                    width: 757px;
+                    height: 434px;
                 }
             }
         }
@@ -100,6 +103,7 @@
             img {
                 display: inline;
                 display: flex;
+                margin: 0 auto;
 
                 @include lg {
                     display: none;
