@@ -1,4 +1,27 @@
+#checkout{
+
+    .mainimg{
+        display: none;
+
+        @include lg{
+            display: inline;
+        }
+    }
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 50% 50%;
+    }
+
+}
+
 #bag {
+
+    @include lg{
+        margin-left: 42px;
+        margin-right: 42px;
+    }
 
     h1,h2,h3,h4,h5,h6{
         margin-top: 0px;
@@ -20,6 +43,13 @@
 //////////
 
 #forms {
+
+    @include lg{
+        margin-left: 42px;
+        margin-right: 42px;
+
+    }
+
     article {
         div {
             display: flex;

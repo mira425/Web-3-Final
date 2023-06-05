@@ -35,10 +35,10 @@
             background: $yellow;
         }
     }
-
 }
 
 #main-menu {
+    display: flex;
 
     @media only screen and (max-width: 600px) {
         background-color: $gray6;
@@ -57,6 +57,10 @@
 
     ul {
         display: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: black;
+        font-size: 24px;
 
         @include lg {
             display: inline;
