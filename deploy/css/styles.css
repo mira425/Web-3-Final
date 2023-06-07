@@ -988,6 +988,7 @@ footer h3, footer img {
   color: #0066FF;
   display: flex;
   justify-content: flex-end;
+  padding-right: 100px;
 }
 
 #similar {
