@@ -11,8 +11,8 @@
         flex-direction: column;
 
         @include lg {
-            margin-left: 74px;
-            margin-right: 74px;
+            margin-left: 150px;
+            margin-right: 150px;
         }
 
         padding-bottom: 45px;
@@ -62,6 +62,10 @@
 
         display: flex;
 
+        @include lg{
+            justify-content: center;
+        }
+
         ul {
             overflow: scroll;
             width: 100vw;
@@ -74,9 +78,6 @@
             
             @include lg{
                overflow: visible;
-            }
-
-            @include lg {
                 display: grid;
                 grid-template-areas:
                     "jimmy johnny adam"

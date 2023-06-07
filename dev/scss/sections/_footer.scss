@@ -1,6 +1,25 @@
 footer{
     width: 100%;
+    height: 46px;
     background-color: $gray6;
+
+    @include lg{
+        height: 198px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            padding-left: 98px;
+        }
+
+        div{
+            padding-right: 98px;
+            display: flex;
+            gap: 30px;
+        }
+    }
+
     h3{
         color: $white;
     }

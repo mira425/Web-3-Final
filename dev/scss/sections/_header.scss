@@ -20,6 +20,7 @@
             display: inline;
             display: flex;
             justify-content: center;
+            padding-top: 47px;
         }
     }
 
@@ -34,11 +35,34 @@
             width: 26px;
             background: $yellow;
         }
+
+        @include lg{
+            display: none;
+        }
     }
+
+    #burger-btn.open{
+        div{
+          transition:.3s;
+          //// COLORS & STYLES FOR ALL HERE
+          &:first-child{
+            transform: rotate(45deg);
+            transform-origin: bottom left;
+          }
+          &:nth-child(2){
+            opacity:0;
+          }
+          &:last-child{
+            transform-origin: top left;
+            transform:rotate(-45deg);
+          }
+        }
+      }
 }
 
 #main-menu {
     display: flex;
+    justify-content: center;
 
     @media only screen and (max-width: 600px) {
         background-color: $gray6;
@@ -58,7 +82,7 @@
     ul {
         display: none;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         color: black;
         font-size: 24px;
 
@@ -66,7 +90,7 @@
             display: inline;
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            gap: 60px;
 
             a {
                 color: $white;

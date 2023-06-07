@@ -616,7 +616,24 @@ textarea {
 
 footer {
   width: 100%;
+  height: 46px;
   background-color: #2B2B2B;
+}
+@media (min-width: 1024px) {
+  footer {
+    height: 198px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer img {
+    padding-left: 98px;
+  }
+  footer div {
+    padding-right: 98px;
+    display: flex;
+    gap: 30px;
+  }
 }
 footer h3 {
   color: #FFFFFF;
@@ -652,6 +669,7 @@ footer h3, footer img {
     display: inline;
     display: flex;
     justify-content: center;
+    padding-top: 47px;
   }
 }
 #header #burger-btn {
@@ -665,9 +683,29 @@ footer h3, footer img {
   width: 26px;
   background: #EEB43C;
 }
+@media (min-width: 1024px) {
+  #header #burger-btn {
+    display: none;
+  }
+}
+#header #burger-btn.open div {
+  transition: 0.3s;
+}
+#header #burger-btn.open div:first-child {
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+}
+#header #burger-btn.open div:nth-child(2) {
+  opacity: 0;
+}
+#header #burger-btn.open div:last-child {
+  transform-origin: top left;
+  transform: rotate(-45deg);
+}
 
 #main-menu {
   display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 600px) {
   #main-menu {
@@ -687,7 +725,7 @@ footer h3, footer img {
 #main-menu ul {
   display: none;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
   font-size: 24px;
 }
@@ -696,7 +734,7 @@ footer h3, footer img {
     display: inline;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 60px;
   }
   #main-menu ul a {
     color: #FFFFFF;
@@ -843,8 +881,8 @@ footer h3, footer img {
 }
 @media (min-width: 1024px) {
   #reviews aside {
-    margin-left: 74px;
-    margin-right: 74px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 #reviews aside article {
@@ -886,6 +924,11 @@ footer h3, footer img {
 #reviews .reviews {
   display: flex;
 }
+@media (min-width: 1024px) {
+  #reviews .reviews {
+    justify-content: center;
+  }
+}
 #reviews .reviews ul {
   overflow: scroll;
   width: 100vw;
@@ -898,10 +941,6 @@ footer h3, footer img {
 @media (min-width: 1024px) {
   #reviews .reviews ul {
     overflow: visible;
-  }
-}
-@media (min-width: 1024px) {
-  #reviews .reviews ul {
     display: grid;
     grid-template-areas: "jimmy johnny adam" "tim samantha tony" "billy craig sadie";
     justify-items: center;
@@ -985,6 +1024,8 @@ footer h3, footer img {
 @media (min-width: 1024px) {
   #similar h1 {
     color: #EEB43C;
+    padding-top: 20px;
+    padding-left: 80px;
   }
 }
 #similar h5 {
@@ -1045,6 +1086,8 @@ footer h3, footer img {
 @media (min-width: 1024px) {
   #checkout .mainimg {
     display: inline;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
@@ -1057,8 +1100,7 @@ footer h3, footer img {
 
 @media (min-width: 1024px) {
   #bag {
-    margin-left: 42px;
-    margin-right: 42px;
+    margin: 42px;
   }
 }
 #bag h1, #bag h2, #bag h3, #bag h4, #bag h5, #bag h6 {
@@ -1068,22 +1110,35 @@ footer h3, footer img {
 #bag article {
   display: flex;
   align-items: center;
+  border-top: 2px solid #DDDDDD;
+  border-bottom: 2px solid #DDDDDD;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 #bag ul {
   display: flex;
   justify-content: space-between;
+}
+#bag ul li {
+  display: flex;
+  flex-direction: column;
+  height: 115px;
+  justify-content: space-around;
 }
 
 @media (min-width: 1024px) {
   #forms {
     margin-left: 42px;
     margin-right: 42px;
+    margin-left: 140px;
+    margin-right: 140px;
   }
 }
 #forms article div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 #forms article div img {
   height: 49px;
@@ -1099,6 +1154,14 @@ footer h3, footer img {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1024px) {
+  #forms form {
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+}
 #forms form input {
   width: 328px;
   height: 38px;
@@ -1108,28 +1171,66 @@ footer h3, footer img {
   font-size: 15px;
   border: 1.5px solid #B0B0B0;
 }
-
-#thankyou {
-  background-color: aquamarine;
+@media (min-width: 1024px) {
+  #forms form input {
+    width: 507px;
+    height: 57px;
+  }
 }
-#thankyou article img {
+@media (min-width: 1024px) {
+  #forms form a {
+    margin-bottom: 20px;
+  }
+}
+
+#thankyou .mainimg {
   display: none;
 }
 @media (min-width: 1024px) {
-  #thankyou article img {
+  #thankyou .mainimg {
     display: inline;
-    position: fixed;
-    top: 0;
-    z-index: 1;
     width: 100%;
     height: 100%;
-    background-image: url(img/MainCheckout.png);
-    background-repeat: repeat-x;
+  }
+}
+@media (min-width: 1024px) {
+  #thankyou {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 50% 50%;
   }
 }
 #thankyou aside {
   display: flex;
+  width: 420px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
-#thankyou aside h1 {
-  color: #FFFFFF;
+#thankyou aside h6 {
+  color: #B0B0B0;
+}
+@media (min-width: 1024px) {
+  #thankyou aside {
+    padding-left: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #thankyou aside h4 {
+    margin: 0px;
+  }
+  #thankyou aside .top {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #thankyou aside .middle {
+    margin-bottom: 10px;
+  }
+  #thankyou aside .track {
+    text-decoration: underline #000000 2px;
+  }
+  #thankyou aside h6 {
+    text-align: center;
+  }
 }

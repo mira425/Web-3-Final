@@ -5,6 +5,8 @@
 
         @include lg{
             display: inline;
+            width: 100%;
+            height: auto;
         }
     }
 
@@ -19,8 +21,7 @@
 #bag {
 
     @include lg{
-        margin-left: 42px;
-        margin-right: 42px;
+        margin: 42px;
     }
 
     h1,h2,h3,h4,h5,h6{
@@ -31,11 +32,21 @@
     article {
         display: flex;
         align-items: center;
+        border-top: 2px solid $gray2;
+        border-bottom: 2px solid $gray2;
+        margin-top: 55px;
+        margin-bottom: 55px;
     }
 
     ul {
         display: flex;
         justify-content: space-between;
+        li{
+            display: flex;
+            flex-direction: column;
+            height: 115px;
+            justify-content: space-around
+        }
     }
 
 }
@@ -47,6 +58,8 @@
     @include lg{
         margin-left: 42px;
         margin-right: 42px;
+        margin-left: 140px;
+        margin-right: 140px;
 
     }
 
@@ -55,6 +68,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            align-items: center;
 
             img {
                 height: 49px;
@@ -73,6 +87,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+        @include lg{
+            height: 300px;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
 
         input {
             width: 328px;
@@ -82,6 +103,17 @@
             color: black;
             font-size: 15px;
             border: 1.5px solid $gray3;
+
+            @include lg{
+                width: 507px;
+                height: 57px;  
+            }
+
+        }
+        a{
+            @include lg{
+                margin-bottom: 20px;
+            }
         }
     }
 }
