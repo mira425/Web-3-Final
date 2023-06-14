@@ -1,12 +1,16 @@
 #thankyou {
 
-    .mainimg{
+    @include lg {
+        position:absolute;
+    }
+
+    .mainimg {
         display: none;
 
-        @include lg{
+        @include lg {
             display: inline;
-            width: 100%;
-            height: 100%;
+            width: 660px;
+            height: auto;
         }
     }
 
@@ -18,24 +22,55 @@
 
     aside {
         display: flex;
-        width: 420px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 390px;
         margin-bottom: 30px;
         margin-top: 30px;
 
-        h6 {
-            color: $gray3;
+        h1 {
+            font-size: 24px;
         }
 
+        .track {
+            text-decoration: underline $gray3 1.2px;
+        }
+
+        .middle {
+            margin: 10px 0px 40px;
+            padding: 0px 20px;
+
+            h6 {
+                color: $gray3;
+                font-size: 14px;
+            }
+        }
+
+        .yellowbutton {
+            display: flex;
+            justify-content: center;
+            width: 190px;
+        }
 
         @include lg {
+            margin: 0px;
             padding-left: 160px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
 
+            h1 {
+                font-size: 40px;
+            }
+
             h4 {
                 margin: 0px;
+            }
+
+            h6 {
+                font-size: 18px;
             }
 
             .top {
@@ -45,10 +80,6 @@
 
             .middle {
                 margin-bottom: 10px;
-            }
-
-            .track {
-                text-decoration: underline $black 2px;
             }
 
             h6 {

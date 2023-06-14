@@ -2,7 +2,7 @@
 
     @include lg {
         margin: 64px 84px;
-        display: inline;
+        // display: inline;
         height: 723.84px;
         display: flex;
         flex-direction: column;
@@ -48,17 +48,16 @@
                         width: 150px;
                     }
                 }
+
+                .bodytext{
+                    width: 358px;
+                }
             }
 
             @include lg{
                 // width: 530px;
                 padding-bottom: 45px;
                 gap: 25px;
-            }
-           
-            h4{
-                width: 508px;
-                // height: 118px;
             }
 
             h1,h2,h4{

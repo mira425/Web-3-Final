@@ -1,5 +1,5 @@
 #similar {
-    margin: 111px 64px;
+    margin: 80px 64px;
 
     article,
     ul {
@@ -23,14 +23,18 @@
     }
 
     .seemore {
+        display: none;
 
         @include lg {
+            display: inline;
             color: $yellow;
+            display: flex;
         }
     }
 
     h1 {
         color: $black;
+        font-size: 30px;
 
         @include lg {
             color: $yellow;

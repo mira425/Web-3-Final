@@ -62,30 +62,6 @@ h6 {
     font-size: 15px;
 }
 
-@mixin h7 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-h7 {
-    @include h7();
-    color: black;
-    font-size: 20px;
-}
-
-@mixin h8 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-h8 {
-    @include h8();
-    color: black;
-    font-size: 15px;
-}
-
-
-
 //button//
 
 @mixin btn-font() {

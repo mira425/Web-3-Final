@@ -41,6 +41,8 @@
         flex-direction: column;
         gap: 5px;
         position: relative;
+        padding-top: 10px;
+        padding-left: 10px;
 
         div {
             height: 3px;
@@ -56,6 +58,7 @@
     #burger-btn.open {
         div {
             transition: .3s;
+            z-index: 2000;
 
             //// COLORS & STYLES FOR ALL HERE
             &:first-child {
@@ -89,8 +92,20 @@
         right: -100%;
 
         &.show-menu {
-            right: 0;
+            left: 0;
             transition: .3s;
+
+        ul{
+            display: inline;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding-top: 50px;
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
         }
     }
 
@@ -102,7 +117,7 @@
         font-size: 24px;
 
         @include lg {
-            display: inline;
+            // display: inline;
             display: flex;
             align-items: center;
             gap: 60px;
