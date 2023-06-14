@@ -20,10 +20,14 @@ footer{
         }
     }
 
-    h3{
+    a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
         color: $white;
+        font-size: 24px;
+        text-decoration: none;
     }
-    h3, img{
+    a, img{
         display: none;
 
         @include lg{

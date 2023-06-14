@@ -1,26 +1,12 @@
 #hero {
 
     @include lg {
-        margin: 84px 250px;
+        margin: 64px 84px;
         display: inline;
         height: 723.84px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-
-    span {
-        display: none;
-
-        @include lg {
-            display: inline;
-            background-color: $gray6;
-            position: absolute;
-            width: 100%;
-            height: 64px;
-            bottom: -150px;
-        }
     }
 
     aside {
@@ -51,7 +37,16 @@
 
                 @include lg {
                     // width: 508px;
-                    padding-bottom: 54px;
+                    // padding-bottom: 54px;
+                }
+
+                .reviews{
+                    display: none;
+
+                    @include lg{
+                        display: inline;
+                        width: 150px;
+                    }
                 }
             }
 
@@ -93,8 +88,10 @@
 
                 @include lg {
                     display: inline;
-                    width: 757px;
-                    height: 434px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    // height: 434px;
                 }
             }
         }
@@ -144,5 +141,4 @@
         }
 
     }
-
 }

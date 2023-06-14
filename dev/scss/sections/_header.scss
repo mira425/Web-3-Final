@@ -1,5 +1,4 @@
 #header {
-
     background-color: $gray6;
     width: 100%;
     height: 43px;
@@ -9,9 +8,9 @@
         height: 190px;
     }
 
-    h3 {
-        color: $white;
-    }
+    // h3 {
+    //     color: $white;
+    // }
 
     #logo {
         display: none;
@@ -20,7 +19,20 @@
             display: inline;
             display: flex;
             justify-content: center;
-            padding-top: 47px;
+            padding-bottom: 20px;
+        }
+    }
+
+    #icons {
+        display: none;
+
+        @include lg {
+            display: inline;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
         }
     }
 
@@ -36,28 +48,31 @@
             background: $yellow;
         }
 
-        @include lg{
+        @include lg {
             display: none;
         }
     }
 
-    #burger-btn.open{
-        div{
-          transition:.3s;
-          //// COLORS & STYLES FOR ALL HERE
-          &:first-child{
-            transform: rotate(45deg);
-            transform-origin: bottom left;
-          }
-          &:nth-child(2){
-            opacity:0;
-          }
-          &:last-child{
-            transform-origin: top left;
-            transform:rotate(-45deg);
-          }
+    #burger-btn.open {
+        div {
+            transition: .3s;
+
+            //// COLORS & STYLES FOR ALL HERE
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: bottom left;
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform-origin: top left;
+                transform: rotate(-45deg);
+            }
         }
-      }
+    }
 }
 
 #main-menu {

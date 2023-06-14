@@ -353,13 +353,6 @@ h2 {
   font-size: 24px;
 }
 
-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: black;
-  font-size: 24px;
-}
-
 h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -367,7 +360,7 @@ h4 {
   font-size: 20px;
 }
 
-h5 {
+h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: black;
@@ -416,11 +409,17 @@ h8 {
   box-shadow: none;
   transition: 0.3s;
 }
+.yellowbutton:hover img {
+  filter: invert(42%) sepia(0%) saturate(5744%) hue-rotate(187deg) brightness(103%) contrast(115%);
+}
 .yellowbutton:active {
   background-color: #EED091;
   color: #6A6A6A;
   border: 2.5px solid #6A6A6A;
   box-shadow: inset 4px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.yellowbutton:active img {
+  filter: invert(42%) sepia(0%) saturate(5744%) hue-rotate(187deg) brightness(103%) contrast(115%);
 }
 
 .clearbutton {
@@ -487,27 +486,36 @@ textarea {
   width: 265px;
   height: 76px;
 }
-#contact section input {
+@media (min-width: 1024px) {
+  #contact section aside {
+    display: flex;
+    gap: 10px;
+  }
+}
+#contact section aside input {
   display: none;
 }
 @media (min-width: 1024px) {
-  #contact section input {
+  #contact section aside input {
     display: inline;
-    width: 400px;
+    width: 290px;
     height: 51px;
     background-color: #E9E9E9;
     border: 3px solid #B0B0B0;
     border-radius: 8px;
   }
 }
-#contact section a.yellowbutton {
+#contact section aside a.yellowbutton {
   display: none;
 }
 @media (min-width: 1024px) {
-  #contact section a.yellowbutton {
+  #contact section aside a.yellowbutton {
     display: inline;
     width: 100px;
-    height: 51px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 #contact div {
@@ -635,14 +643,18 @@ footer {
     gap: 30px;
   }
 }
-footer h3 {
+footer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: #FFFFFF;
+  font-size: 24px;
+  text-decoration: none;
 }
-footer h3, footer img {
+footer a, footer img {
   display: none;
 }
 @media (min-width: 1024px) {
-  footer h3, footer img {
+  footer a, footer img {
     display: inline;
   }
 }
@@ -658,9 +670,6 @@ footer h3, footer img {
     height: 190px;
   }
 }
-#header h3 {
-  color: #FFFFFF;
-}
 #header #logo {
   display: none;
 }
@@ -669,7 +678,20 @@ footer h3, footer img {
     display: inline;
     display: flex;
     justify-content: center;
-    padding-top: 47px;
+    padding-bottom: 20px;
+  }
+}
+#header #icons {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #header #icons {
+    display: inline;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
   }
 }
 #header #burger-btn {
@@ -744,25 +766,12 @@ footer h3, footer img {
 
 @media (min-width: 1024px) {
   #hero {
-    margin: 84px 250px;
+    margin: 64px 84px;
     display: inline;
     height: 723.84px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-#hero span {
-  display: none;
-}
-@media (min-width: 1024px) {
-  #hero span {
-    display: inline;
-    background-color: #2B2B2B;
-    position: absolute;
-    width: 100%;
-    height: 64px;
-    bottom: -150px;
   }
 }
 #hero aside {
@@ -789,9 +798,13 @@ footer h3, footer img {
     align-items: flex-start;
   }
 }
+#hero aside .info section .reviews {
+  display: none;
+}
 @media (min-width: 1024px) {
-  #hero aside .info section {
-    padding-bottom: 54px;
+  #hero aside .info section .reviews {
+    display: inline;
+    width: 150px;
   }
 }
 @media (min-width: 1024px) {
@@ -825,8 +838,9 @@ footer h3, footer img {
 @media (min-width: 1024px) {
   #hero aside article.mainimage img {
     display: inline;
-    width: 757px;
-    height: 434px;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 #hero aside .mainmobile img {
@@ -881,8 +895,8 @@ footer h3, footer img {
 }
 @media (min-width: 1024px) {
   #reviews aside {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 #reviews aside article {
@@ -906,6 +920,9 @@ footer h3, footer img {
   #reviews aside article .yellowbutton {
     display: inline;
     width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 #reviews aside article input {
@@ -989,6 +1006,7 @@ footer h3, footer img {
   display: flex;
   justify-content: flex-end;
   padding-right: 100px;
+  gap: 5px;
 }
 
 #similar {
@@ -1025,13 +1043,14 @@ footer h3, footer img {
 @media (min-width: 1024px) {
   #similar h1 {
     color: #EEB43C;
-    padding-top: 20px;
-    padding-left: 80px;
+    padding-top: 40px;
+    padding-left: 0px;
   }
 }
-#similar h5 {
+#similar h3 {
   display: flex;
   justify-content: flex-end;
+  margin-top: 0px;
 }
 #similar ul {
   display: flex;
@@ -1077,7 +1096,7 @@ footer h3, footer img {
     justify-content: center;
   }
 }
-#similar ul li h5 {
+#similar ul li h3 {
   text-align: center;
 }
 

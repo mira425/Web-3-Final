@@ -34,14 +34,15 @@
 
         @include lg {
             color: $yellow;
-            padding-top: 20px;
-            padding-left: 80px;
+            padding-top: 40px;
+            padding-left: 0px;
         }
     }
 
-    h5 {
+    h3 {
         display: flex;
         justify-content: flex-end;
+        margin-top: 0px;
 
     }
 
@@ -89,7 +90,7 @@
             justify-content: center;
             }
 
-            h5 {
+            h3 {
                 text-align: center;
             }
         }

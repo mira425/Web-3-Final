@@ -20,6 +20,9 @@
         border: 2.5px solid $gray5;
         box-shadow: none;
         transition: .3s;
+        img{
+            filter: invert(42%) sepia(0%) saturate(5744%) hue-rotate(187deg) brightness(103%) contrast(115%);
+        }
     }
 
     &:active{
@@ -27,8 +30,10 @@
         color: $gray5;
         border: 2.5px solid $gray5;
         box-shadow: inset 4px 7px 1px rgba(0, 0, 0, 0.2);
+        img{
+            filter: invert(42%) sepia(0%) saturate(5744%) hue-rotate(187deg) brightness(103%) contrast(115%);
+        }
     }
-    
 }
 
 .yellowbutton{

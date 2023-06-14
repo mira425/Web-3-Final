@@ -7,32 +7,45 @@
         justify-content: space-between;
         padding-bottom: 60px;
 
-        .socials{
+        .socials {
             width: 265px;
             height: 76px;
         }
 
-        input {
-            display: none;
+        aside {
 
-            @include lg {
-                display: inline;
-                width: 400px;
-                height: 51px;
-                background-color: $gray1;
-                border: 3px solid $gray3;
-                border-radius: 8px;
+            @include lg{
+                display: flex;
+                gap: 10px;
             }
+
+            input {
+                display: none;
+
+                @include lg {
+                    display: inline;
+                    width: 290px;
+                    height: 51px;
+                    background-color: $gray1;
+                    border: 3px solid $gray3;
+                    border-radius: 8px;
+                }
+            }
+
+            a.yellowbutton {
+                display: none;
+    
+                @include lg {
+                    display: inline;
+                    width: 100px;
+                    height: 30px;
+                    // text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
         }
 
-        a.yellowbutton {
-            display: none;
-
-            @include lg {
-                display: inline;
-                width: 100px;
-                height: 51px;
-            }
         }
     }
 
