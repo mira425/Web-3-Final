@@ -1,24 +1,39 @@
 #checkout {
-    .mainimg {
-        display: none;
+    #checkoutimgs {
+        display: flex;
+        flex-direction: column;
+        .imgsticky {
+            display: none;
 
-        @include lg {
-            display: inline;
-            width: 660px;
-            height: auto;
+            @include lg {
+                display: inline;
+                width: 660px;
+                height: auto;
+            }
+        }
+
+        .imgtwo {
+            display: none;
+
+            @include lg {
+                display: inline;
+                width: 660px;
+
+            }
         }
     }
 
     @include lg {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 50% 50%;
+        grid-template-areas: "checkoutimgs content";
     }
 }
 
-#content{
+#content {
     margin: 20px 20px 0px;
-    @include lg{
+
+    @include lg {
         margin: 0px;
         width: 780px;
     }
@@ -29,7 +44,12 @@
         margin: 42px;
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -52,7 +72,8 @@
             flex-direction: column;
             height: 115px;
             justify-content: space-around;
-            .hsixbold{
+
+            .hsixbold {
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 color: black;

@@ -13,9 +13,11 @@
         @include lg {
             margin-left: 100px;
             margin-right: 100px;
+            padding-left: 0px;
         }
 
         padding-bottom: 45px;
+        padding-left: 15px;
 
         article {
             display: flex;
@@ -92,6 +94,7 @@
             overflow: scroll;
             width: 100vw;
             justify-content: flex-start;
+            padding-left: 15px;
 
             display: flex;
             flex-direction: row;
@@ -112,6 +115,7 @@
                 width: 1290px;
                 height: 1330px;
                 gap: 72px;
+                padding-left: 0px;
             }
 
             li {
@@ -168,17 +172,28 @@
     }
 
     .more {
+
+        a{
+            text-decoration: none;
+            :hover{
+                text-decoration: underline $blue 1.5px;
+            }
+        }
+        
         h3 {
             color: $blue;
             display: flex;
             justify-content: flex-end;
             padding-right: 10px;
             gap: 5px;
+            font-size: 20px;
+
 
             @include lg{
                 display: flex;
                 justify-content: flex-end;
                 padding-right: 100px;
+                font-size: 24px;
             }
         }
     }

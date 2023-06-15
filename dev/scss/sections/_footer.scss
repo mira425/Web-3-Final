@@ -3,6 +3,10 @@ footer{
     height: 46px;
     background-color: $gray6;
 
+    .footerbtn:hover{
+        color: $yellow;
+    }
+
     @include lg{
         height: 198px;
         display: flex;

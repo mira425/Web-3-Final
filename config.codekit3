@@ -42,6 +42,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Checkout2.png" : {
+      "ft" : 32768,
+      "iS" : 873201,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Checkout2.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/CheckoutSaw.png" : {
       "ft" : 32768,
       "iS" : 8314,
@@ -307,8 +320,8 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/MainCheckout.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,

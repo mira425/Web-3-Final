@@ -17,11 +17,17 @@
             width: 100%;
             height: 430px;
             left: 0px;
-            top: 1937px;
+            top: 1800px;
             background-color: $gray6;
         }
     }
 
+    a{
+        text-decoration: none;
+        :hover{
+            text-decoration: underline $yellow 1.5px;
+        }
+    }
     .seemore {
         display: none;
 
@@ -35,11 +41,13 @@
     h1 {
         color: $black;
         font-size: 30px;
+        padding-bottom: 20px;
 
         @include lg {
             color: $yellow;
             padding-top: 40px;
             padding-left: 0px;
+            padding-bottom: 0px;
         }
     }
 
@@ -54,7 +62,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
 
         @include lg {
             display: flex;
@@ -97,6 +105,11 @@
             h3 {
                 text-align: center;
             }
+
+            .viewarrow{
+                filter: brightness(0%);
+            }
+
         }
 
     }
