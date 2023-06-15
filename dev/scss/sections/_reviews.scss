@@ -25,12 +25,13 @@
             justify-content: space-between;
             gap: 10px;
 
-            #reviewinfo{
+            #reviewinfo {
                 display: flex;
                 align-items: center;
                 gap: 5px;
                 font-size: 14px;
-                @include lg{
+
+                @include lg {
                     font-size: 20px;
                 }
 
@@ -80,13 +81,13 @@
 
         display: flex;
 
-        ul{
-            li{
+        ul {
+            li {
                 overflow: scroll;
             }
         }
 
-        @include lg{
+        @include lg {
             justify-content: center;
         }
 
@@ -100,9 +101,9 @@
             flex-direction: row;
             gap: 24px;
             margin: 0px;
-            
-            @include lg{
-               overflow: visible;
+
+            @include lg {
+                overflow: visible;
                 display: grid;
                 grid-template-areas:
                     "jimmy johnny adam"
@@ -125,7 +126,7 @@
                 max-height: 300px;
                 align-items: flex-start;
 
-                @include lg{
+                @include lg {
                     min-width: 383px;
                     max-height: 383px;
                 }
@@ -173,13 +174,14 @@
 
     .more {
 
-        a{
+        a {
             text-decoration: none;
-            :hover{
+
+            :hover {
                 text-decoration: underline $blue 1.5px;
             }
         }
-        
+
         h3 {
             color: $blue;
             display: flex;
@@ -189,7 +191,7 @@
             font-size: 20px;
 
 
-            @include lg{
+            @include lg {
                 display: flex;
                 justify-content: flex-end;
                 padding-right: 100px;

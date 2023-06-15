@@ -2,12 +2,9 @@
 
     @include lg {
         margin: 64px 84px;
-        // display: inline;
-        // height: 723.84px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // padding-bottom: 20px;
     }
 
     aside {
@@ -17,7 +14,6 @@
         @include lg {
             display: flex;
             flex-direction: row;
-            // justify-content: space-evenly;
             justify-content: space-between;
             width: 100%;
         }
@@ -29,50 +25,52 @@
             padding-bottom: 44px;
             padding-top: 20px;
 
-            @include lg{
+            @include lg {
                 flex-direction: column;
-                align-items: flex-start;                
+                align-items: flex-start;
             }
 
             section {
-                // width: 352px;
-                // height: auto;
-                h1,h2{
+
+                h1,
+                h2 {
                     margin: 0px;
                 }
 
                 @include lg {
-                    // width: 508px;
-                    // padding-bottom: 54px;
                     padding-bottom: 20px;
                 }
 
-                .reviews{
+                .reviews {
                     display: none;
 
-                    @include lg{
+                    @include lg {
                         display: inline;
                         width: 150px;
                     }
                 }
 
-                .bodytext{
+                .bodytext {
                     width: 358px;
                 }
             }
 
-            @include lg{
-                // width: 530px;
+            @include lg {
                 padding-bottom: 45px;
                 gap: 25px;
             }
 
-            h1,h2,h4{
+            h1,
+            h2,
+            h4 {
                 text-align: center;
             }
 
-            @include lg{
-                h1,h2,h4{
+            @include lg {
+
+                h1,
+                h2,
+                h4 {
                     text-align: left;
                 }
             }
@@ -97,7 +95,6 @@
                     width: 100%;
                     display: flex;
                     align-items: center;
-                    // height: 434px;
                 }
             }
         }

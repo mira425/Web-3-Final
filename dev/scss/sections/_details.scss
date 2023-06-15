@@ -1,10 +1,10 @@
 #details {
 
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    @include sm{
+    @include sm {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,18 +19,17 @@ align-items: center;
         gap: 66px;
     }
 
-    aside{
-        
-        img{
+    aside {
+
+        img {
             width: 256px;
-            height: 340px; 
+            height: 340px;
             display: flex;
 
-            @include lg{
+            @include lg {
                 height: auto;
                 width: auto;
             }
-
         }
     }
 
@@ -42,7 +41,7 @@ align-items: center;
             width: 641px;
         }
 
-        .hsixdetails{
+        .hsixdetails {
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
             color: black;

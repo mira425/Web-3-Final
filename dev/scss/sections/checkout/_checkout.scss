@@ -2,6 +2,7 @@
     #checkoutimgs {
         display: flex;
         flex-direction: column;
+
         .imgsticky {
             display: none;
 
@@ -26,7 +27,7 @@
     @include lg {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "checkoutimgs content";
+        grid-template-areas: 50% 50%;
     }
 }
 
